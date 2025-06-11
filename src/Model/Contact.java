@@ -1,27 +1,26 @@
 package Model;
 
-public class Contact{
+public class Contact {
     private String name;
-    private int phone;
-    
-    public Contact(String name) {
-        this.name = name;
-    }
+    private String phone;
 
-    public Contact(int phone){
+    public Contact(String name, String phone) {
+        this.name = name;
         this.phone = phone;
     }
+
+    
 
     public String getName() {
         return name;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
     @Override
     public String toString() {
-        return "Contact [name=" + name + ", phone=" + phone + "]";
+        return "Name: " + name + ", Phone: " + phone;
     }
 }

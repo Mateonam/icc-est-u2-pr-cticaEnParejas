@@ -1,4 +1,5 @@
 package Controller;
+import Model.Contact;
 import View.ConsoleView;
 public class MenuController {
     private ContactManager contactManager;
