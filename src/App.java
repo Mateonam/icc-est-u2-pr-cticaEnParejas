@@ -1,5 +1,13 @@
+import Controller.*;
+import View.ConsoleView;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        ConsoleView view = new ConsoleView();
+
+        ContactManager cM = new ContactManager();
+
+        MenuController menu = new MenuController(cM, view);
+        menu.showMenu();
     }
 }
